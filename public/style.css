@@ -1,0 +1,104 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: aqua;
+    font-family: sans-serif;
+}
+#add{
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    background-color: #16f716;
+    border: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1%;
+    border-radius: 3%;
+    width: 150px;
+}
+
+#NewCard{
+    height: 63vh;
+    width: 50vw;
+    position: absolute;
+    top: 16%;
+    left: 20%;
+    background-color: white;
+}
+
+#Navbar{
+    background-color: #16f716;
+    height: 10%;
+    color: white;
+    font-size: large;
+    padding-top: 2%;
+    text-align: center;
+}
+
+#NoteSubmit{
+    position: absolute;
+    background-color: #16f716;
+    border: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1%;
+    border-radius: 3%;
+    width: 150px;
+    bottom: 10%;
+    right: 25%;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+  }
+
+textarea:focus{
+    outline: none;
+}
+
+#note-content{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 98%;
+}
+
+.note-card{
+    width: 20vw;
+    background-color: white;
+    word-wrap: break-word;
+    margin-right: 5%;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+    height: fit-content;
+}
+
+.note-card-nav{
+    background-color: #16f716;
+    color: white;
+    font-size: large;
+    padding-top: 2%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+}
+
+.note-card-content{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.note-card-nav div{
+    cursor: pointer;
+}

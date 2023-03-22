@@ -1,0 +1,12 @@
+<%- include('header'); -%>
+<form action="/editSave" method="post">
+<div id="NewCard">
+    <div id="Navbar">
+        ADD NEW NOTES
+    </div>
+    <input name="id" value="<%= content._id %>" height="0px" width="0px" style="display: none;">
+    <div id="card-content"><textarea name="Content" rows="15" style="width:99%; border: 0px solid;margin: 0%;resize: none;" autocomplete="off"><%= content.notesContent %></textarea></div>
+</div>
+<button id="NoteSubmit" type="submit">SAVE</button>
+</form>
+<%- include('footer'); -%>

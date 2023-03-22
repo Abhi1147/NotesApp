@@ -1,0 +1,28 @@
+<%- include('header'); -%>
+<% function del(){ %>
+    <% console.log("okkkk"); %>
+<% } %>
+<div id="note-content">
+    <% for(var i=0;i<notes.length;i++){ %>
+       
+          <div class="note-card"> 
+           <div class="note-card-nav">
+            <div style="margin-right: 5%;">
+                <form action="/edit" method="post">
+                <input name="editable" value="<%= notes[i]._id %>" style="height: 0px; width: 0px;display: none;"> 
+                <button type="submit" style="border:none;font-size: large;background-color: #16f716;color: white;cursor: pointer;"><i class="fa-sharp fa-solid fa-pen-to-square" ></i></button>
+                </form>
+            </div>
+            <form action="/delete" method="post">
+            <input name="deleted" value="<%= notes[i]._id %>" style="height: 0px; width: 0px;display: none;">
+            <div><button type="submit" style="border:none;font-size: large;background-color: #16f716;color: white;cursor: pointer;"><i class="fa-solid fa-trash-can"></i></button></div>
+            </form>
+            </div>
+        
+            <div class="note-card-content">
+                <%= notes[i].notesContent.substring(0,100) %>.... 
+            </div>
+        </div>
+    <% } %>
+</div>
+<%- include('footer') -%>
